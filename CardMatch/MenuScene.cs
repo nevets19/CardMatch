@@ -9,7 +9,7 @@ namespace CardMatch
 {
 	public class MenuScene : SKScene
 	{
-		protected GameScene(IntPtr handle) : base(handle)
+		protected MenuScene(IntPtr handle) : base(handle)
 		{
 			// Note: this .ctor should not contain any initialization logic.
 		}
