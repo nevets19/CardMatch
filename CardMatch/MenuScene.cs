@@ -7,7 +7,7 @@ using UIKit;
 
 namespace CardMatch
 {
-	public class GameScene : SKScene
+	public class MenuScene : SKScene
 	{
 		protected GameScene(IntPtr handle) : base(handle)
 		{
@@ -16,15 +16,7 @@ namespace CardMatch
 
 		public override void DidMoveToView(SKView view)
 		{
-			// Setup your scene here
-			var myLabel = new SKLabelNode("Chalkduster")
-			{
-				Text = "Hello, World!",
-				FontSize = 50,
-				Position = new CGPoint(Frame.Width / 2, Frame.Height / 2)
-			};
-
-			AddChild(myLabel);
+			
 		}
 
 		public override void TouchesBegan(NSSet touches, UIEvent evt)
@@ -33,19 +25,6 @@ namespace CardMatch
 			foreach (var touch in touches)
 			{
 				var location = ((UITouch)touch).LocationInNode(this);
-
-				var sprite = new SKSpriteNode("Spaceship")
-				{
-					Position = location,
-					XScale = 0.5f,
-					YScale = 0.5f
-				};
-
-				var action = SKAction.RotateByAngle(NMath.PI, 1.0);
-
-				sprite.RunAction(SKAction.RepeatActionForever(action));
-
-				AddChild(sprite);
 			}
 		}
 

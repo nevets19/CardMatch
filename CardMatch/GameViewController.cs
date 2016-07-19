@@ -24,7 +24,7 @@ namespace CardMatch
 			skView.IgnoresSiblingOrder = true;
 
 			// Create and configure the scene.
-			var scene = SKNode.FromFile<GameScene>("GameScene");
+			var scene = SKNode.FromFile<MenuScene>("MenuScene");
 			scene.ScaleMode = SKSceneScaleMode.AspectFill;
 
 			// Present the scene.
