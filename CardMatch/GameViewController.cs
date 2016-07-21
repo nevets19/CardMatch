@@ -25,7 +25,7 @@ namespace CardMatch
 
 			// Create and configure the scene.
 			var scene = SKNode.FromFile<MenuScene>("MenuScene");
-			scene.ScaleMode = SKSceneScaleMode.AspectFill;
+			scene.ScaleMode = SKSceneScaleMode.ResizeFill;
 
 			// Present the scene.
 			skView.PresentScene(scene);

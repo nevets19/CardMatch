@@ -96,9 +96,15 @@
     <ImageAsset Include="Assets.xcassets\Spaceship.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Spaceship.imageset\Spaceship.png" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ButtonUp.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ButtonDown.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ButtonUp.imageset\buttonUp.png" />
+    <ImageAsset Include="Assets.xcassets\ButtonDown.imageset\buttonDown.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\ButtonUp.imageset\" />
+    <Folder Include="Assets.xcassets\ButtonDown.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="MenuScene.sks" />
@@ -119,6 +125,8 @@
       <DependentUpon>GameViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuScene.cs" />
+    <Compile Include="GameScene.cs" />
+    <Compile Include="Button.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
