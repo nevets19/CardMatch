@@ -100,11 +100,45 @@
     <ImageAsset Include="Assets.xcassets\ButtonDown.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\ButtonUp.imageset\buttonUp.png" />
     <ImageAsset Include="Assets.xcassets\ButtonDown.imageset\buttonDown.png" />
+    <ImageAsset Include="Assets.xcassets\CardBack.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\CardBack.imageset\CardBack.png" />
+    <ImageAsset Include="Assets.xcassets\TriangleCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TriangleCard.imageset\TriangleCard.png" />
+    <ImageAsset Include="Assets.xcassets\CircleCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SquareCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\StarCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\UpArrowCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\PentagonCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\DownArrowCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LeftArrowCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\RightArrowCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\DiamondCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\CircleCard.imageset\CircleCard.png" />
+    <ImageAsset Include="Assets.xcassets\SquareCard.imageset\SquareCard.png" />
+    <ImageAsset Include="Assets.xcassets\StarCard.imageset\StarCard.png" />
+    <ImageAsset Include="Assets.xcassets\UpArrowCard.imageset\PentagonCard.png" />
+    <ImageAsset Include="Assets.xcassets\UpArrowCard.imageset\UpArrowCard.png" />
+    <ImageAsset Include="Assets.xcassets\PentagonCard.imageset\PentagonCard.png" />
+    <ImageAsset Include="Assets.xcassets\DownArrowCard.imageset\DownArrowCard.png" />
+    <ImageAsset Include="Assets.xcassets\LeftArrowCard.imageset\LeftArrowCard.png" />
+    <ImageAsset Include="Assets.xcassets\RightArrowCard.imageset\RightArrowCard.png" />
+    <ImageAsset Include="Assets.xcassets\DiamondCard.imageset\DiamondCard.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Assets.xcassets\ButtonUp.imageset\" />
     <Folder Include="Assets.xcassets\ButtonDown.imageset\" />
+    <Folder Include="Assets.xcassets\CardBack.imageset\" />
+    <Folder Include="Assets.xcassets\TriangleCard.imageset\" />
+    <Folder Include="Assets.xcassets\CircleCard.imageset\" />
+    <Folder Include="Assets.xcassets\SquareCard.imageset\" />
+    <Folder Include="Assets.xcassets\StarCard.imageset\" />
+    <Folder Include="Assets.xcassets\UpArrowCard.imageset\" />
+    <Folder Include="Assets.xcassets\PentagonCard.imageset\" />
+    <Folder Include="Assets.xcassets\DownArrowCard.imageset\" />
+    <Folder Include="Assets.xcassets\LeftArrowCard.imageset\" />
+    <Folder Include="Assets.xcassets\RightArrowCard.imageset\" />
+    <Folder Include="Assets.xcassets\DiamondCard.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="MenuScene.sks" />
@@ -127,6 +161,7 @@
     <Compile Include="MenuScene.cs" />
     <Compile Include="GameScene.cs" />
     <Compile Include="Button.cs" />
+    <Compile Include="Card.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

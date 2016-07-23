@@ -29,6 +29,7 @@ namespace CardMatch
 				if (_PlayButton.CheckTouchBegin(location))
 				{
 					//play button was pressed
+					Console.WriteLine(location.ToString());
 					_PlayButton.SwapTexture();
 				}
 			}
@@ -41,7 +42,8 @@ namespace CardMatch
 				var location = ((UITouch)touch).LocationInNode(this);
 				if (_PlayButton.CheckTouchRelease(location))
 				{
-					SKScene _GameScene = new GameScene();
+					SKScene _GameScene = new GameScene(this.Size);
+
 
 					this.View.PresentScene(_GameScene, SKTransition.DoorsOpenVerticalWithDuration(1.0f));
 				}
