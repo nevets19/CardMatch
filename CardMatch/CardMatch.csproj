@@ -19,7 +19,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: nevets1912@gmail.com (ZZG7E69BXG)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchFastDev>true</MtouchFastDev>
     <MtouchUseSGen>true</MtouchUseSGen>
@@ -29,6 +29,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>d0fe6573-f890-4d61-a3b2-d0dd62fccab7</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <Optimize>true</Optimize>
@@ -123,6 +124,12 @@
     <ImageAsset Include="Assets.xcassets\LeftArrowCard.imageset\LeftArrowCard.png" />
     <ImageAsset Include="Assets.xcassets\RightArrowCard.imageset\RightArrowCard.png" />
     <ImageAsset Include="Assets.xcassets\DiamondCard.imageset\DiamondCard.png" />
+    <ImageAsset Include="Assets.xcassets\BackGround.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\BackGround.imageset\Pannel.jpg" />
+    <ImageAsset Include="Assets.xcassets\SmileFaceCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AngryFaceCard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SmileFaceCard.imageset\SmileCard.png" />
+    <ImageAsset Include="Assets.xcassets\AngryFaceCard.imageset\AngryCard.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -139,6 +146,9 @@
     <Folder Include="Assets.xcassets\LeftArrowCard.imageset\" />
     <Folder Include="Assets.xcassets\RightArrowCard.imageset\" />
     <Folder Include="Assets.xcassets\DiamondCard.imageset\" />
+    <Folder Include="Assets.xcassets\BackGround.imageset\" />
+    <Folder Include="Assets.xcassets\SmileFaceCard.imageset\" />
+    <Folder Include="Assets.xcassets\AngryFaceCard.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="MenuScene.sks" />
@@ -162,6 +172,8 @@
     <Compile Include="GameScene.cs" />
     <Compile Include="Button.cs" />
     <Compile Include="Card.cs" />
+    <Compile Include="AboutScene.cs" />
+    <Compile Include="ModeScene.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

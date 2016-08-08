@@ -14,6 +14,8 @@ namespace CardMatch
 		private int _PairInteger;
 		private bool _Flipped = false;
 
+		private float _FlipSpeed = 0.2f;
+
 		public Card(SKTexture pairTex, int pairInteger)
 		{
 			base.Init();
@@ -50,9 +52,9 @@ namespace CardMatch
 
 		public void Flip()
 		{
-			SKAction _NegativeScale = SKAction.ScaleXTo(-1, 0.5);
-			SKAction _ZeroScale = SKAction.ScaleXTo(0, 0.5);
-			SKAction _PositiveScale = SKAction.ScaleXTo(1, 0.5);
+			SKAction _NegativeScale = SKAction.ScaleXTo(-1, _FlipSpeed);
+			SKAction _ZeroScale = SKAction.ScaleXTo(0, _FlipSpeed);
+			SKAction _PositiveScale = SKAction.ScaleXTo(1, _FlipSpeed);
 
 			if (this.Texture != _PairTexture)
 			{
@@ -73,11 +75,13 @@ namespace CardMatch
 			}
 		}
 
+
 		public bool Flipped
 		{
 			get { return _Flipped;}
 			set { _Flipped = value;}
 		}
+
 	}
 }
 
