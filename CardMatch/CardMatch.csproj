@@ -72,7 +72,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: nevets1912@gmail.com (ZZG7E69BXG)</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchFastDev>true</MtouchFastDev>
@@ -85,6 +85,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>7102eb94-4e52-4f6f-8a48-aadbc62ff499</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -94,8 +95,6 @@
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Spaceship.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Spaceship.imageset\Spaceship.png" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
     <ImageAsset Include="Assets.xcassets\ButtonUp.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\ButtonDown.imageset\Contents.json" />
@@ -130,6 +129,22 @@
     <ImageAsset Include="Assets.xcassets\AngryFaceCard.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\SmileFaceCard.imageset\SmileCard.png" />
     <ImageAsset Include="Assets.xcassets\AngryFaceCard.imageset\AngryCard.png" />
+    <ImageAsset Include="Assets.xcassets\Panel.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Panel.imageset\panel.png" />
+    <ImageAsset Include="Assets.xcassets\BackGround.imageset\Background.png" />
+    <ImageAsset Include="Assets.xcassets\AboutScene.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\MainMenuScene.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ModeSelectScene.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AboutScene.imageset\AboutScene.png" />
+    <ImageAsset Include="Assets.xcassets\MainMenuScene.imageset\MainMenuScene.png" />
+    <ImageAsset Include="Assets.xcassets\ModeSelectScene.imageset\ModeSelectScene.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-29x29%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-29x29%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-29x29%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-40x40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-40x40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-App-40x40%401x.png" />
+    <ImageAsset Include="Assets.xcassets\Panel.imageset\DropDownMenu.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -149,6 +164,10 @@
     <Folder Include="Assets.xcassets\BackGround.imageset\" />
     <Folder Include="Assets.xcassets\SmileFaceCard.imageset\" />
     <Folder Include="Assets.xcassets\AngryFaceCard.imageset\" />
+    <Folder Include="Assets.xcassets\Panel.imageset\" />
+    <Folder Include="Assets.xcassets\AboutScene.imageset\" />
+    <Folder Include="Assets.xcassets\MainMenuScene.imageset\" />
+    <Folder Include="Assets.xcassets\ModeSelectScene.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="MenuScene.sks" />
@@ -174,6 +193,7 @@
     <Compile Include="Card.cs" />
     <Compile Include="AboutScene.cs" />
     <Compile Include="ModeScene.cs" />
+    <Compile Include="DropDownMenu.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

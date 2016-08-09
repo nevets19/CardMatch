@@ -64,7 +64,7 @@ namespace CardMatch
 			_ButtonText.VerticalAlignmentMode = SKLabelVerticalAlignmentMode.Center;
 			_ButtonText.Position = new CGPoint(0,0);
 			_ButtonText.ZPosition = 2;
-
+			_ButtonText.FontColor = UIColor.White;
 			this.AddChild(_ButtonText);
 		}
 

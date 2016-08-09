@@ -23,7 +23,7 @@ namespace CardMatch
 		}
 		public override void DidMoveToView(SKView view)
 		{
-			_Background = new SKSpriteNode(SKTexture.FromImageNamed("BackGround"));
+			_Background = new SKSpriteNode(SKTexture.FromImageNamed("MainMenuScene"));
 			_Background.AnchorPoint = new CGPoint(0, 0);
 			_Background.Size = new CGSize(this.Size.Width, this.Size.Height);
 			_Background.Position = new CGPoint(0, 0);
