@@ -60,16 +60,23 @@ namespace CardMatch
 			foreach (var touch in touches)
 			{
 				var location = ((UITouch)touch).LocationInNode(this);
+				//if the normal button is pressed
 				if (_NormalModeButton.CheckTouchRelease(location))
 				{
+					//set the cross scene data for difficulty to 1
 					_CrossSceneData.SetInt(1, "difficulty");
+					//present the game scene
 					PresentGameScene();
 				}
+				//if the challenge mode button is pressed
 				if (_ChallengeModeButton.CheckTouchRelease(location))
 				{
+					//set the cross scene data for difficulty to 2
 					_CrossSceneData.SetInt(2, "difficulty");
+					//Present the game scene
 					PresentGameScene();
 				}
+				//if the back button is pressed go back to the main menu
 				if (_BackButton.CheckTouchRelease(location))
 				{
 					MenuScene _MenuScene = new MenuScene(this.Size);
